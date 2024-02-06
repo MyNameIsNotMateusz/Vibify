@@ -1,0 +1,19 @@
+/* Overall for dashboard */
+.dashboard {
+ width: 26%;
+ background-color: #fff;
+ border-top-right-radius: 30px;
+ border-bottom-right-radius: 30px;
+}
+
+/* Style for smaller devices */ 
+@media screen and (max-width: 800px) {
+ .dashboard {
+  width: 30%;
+ }
+}
+
+/* Style for telephones */
+@media screen and (max-width: 480px) {
+
+}

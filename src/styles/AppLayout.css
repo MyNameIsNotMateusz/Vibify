@@ -6,11 +6,37 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ font-family: "Rubik", sans-serif;
 }
 
 body {
  background-color: #e8ecf4;
+}
+
+/* Style for main-container */
+.main-container {
  width: 100vw;
  height: 100vh;
- font-family: "Rubik", sans-serif;
+ display: flex;
+}
+
+/* Style for content */
+.content {
+ width: 58%;
+ border-right: 2.5px solid #e8ecf4;
+ background-color: #fff;
+}
+
+/* Style for smaller devices */ 
+@media screen and (max-width: 800px) {
+ .content {
+  width: 70%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+ }
+}
+
+/* Style for telephones */
+@media screen and (max-width: 480px) {
+
 }
