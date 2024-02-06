@@ -1,0 +1,254 @@
+/* Overall for header */
+.header {
+ width: 16%;
+ height: 100%;
+ background-color: #f8f4f4;
+ border-top-left-radius: 30px;
+ border-bottom-left-radius: 30px;
+ display: flex;
+ flex-direction: column;
+ padding: 3vh 0 3vh 3vw;
+ row-gap: 8%;
+}
+
+/* Styles for header__brand and his children */
+.header__brand {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ cursor: pointer;
+}
+
+.header__brand div {
+ width: 1.5vw;
+}
+
+.header__brand .header__brand-icon {
+ color: #60676e;
+}
+
+.header__brand p {
+ font-size: small;
+ font-weight: 500;
+ color: #60676e;
+}
+
+/* Styles for header__menu and his children */
+.header__menu {
+ display: flex;
+ flex-direction: column;
+}
+
+.header__menu p {
+ color: #a0a4ad;
+ font-size: small;
+ margin-bottom: 1.5vh;
+}
+
+.header__menu ul {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ row-gap: 1.5vh;
+}
+
+.header__menu ul li {
+ width: 100%;
+ cursor: pointer;
+}
+
+.header__menu ul li:hover{
+ border-right: 3px solid #3e37d1;
+}
+
+.header__menu ul li:hover .header__menu-navLink {
+ color: #3e37d1;
+}
+
+.header__menu ul li .header__menu-navLink{
+ text-decoration: none;
+ font-size: small;
+ color: #60676e;
+ font-weight: 500;
+ display: flex;
+ align-items: center;
+}
+
+.header__menu ul li .header__menu-navLink div {
+ width: 1.5vw;
+}
+
+/* Styles for header__library and his children */
+.header__library {
+ display: flex;
+ flex-direction: column;
+}
+
+.header__library p {
+ color: #a0a4ad;
+ font-size: small;
+ margin-bottom: 1.5vh;
+}
+
+.header__library ul {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ row-gap: 1.5vh;
+}
+
+.header__library ul li {
+ width: 100%;
+ cursor: pointer;
+}
+
+.header__library ul li:hover{
+ border-right: 3px solid #3e37d1;
+}
+
+.header__library ul li:hover .header__library-navLink {
+ color: #3e37d1;
+}
+
+.header__library ul li .header__library-navLink{
+ text-decoration: none;
+ font-size: small;
+ color: #60676e;
+ font-weight: 500;
+ display: flex;
+ align-items: center;
+}
+
+.header__library ul li .header__library-navLink div {
+ width: 1.5vw;
+}
+
+/* Styles for header__playlist and his children */
+.header__playlist {
+ display: flex;
+ flex-direction: column;
+}
+
+.header__playlist p {
+ color: #a0a4ad;
+ font-size: small;
+ margin-bottom: 1.5vh;
+}
+
+.header__playlist ul {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ row-gap: 1.5vh;
+}
+
+.header__playlist ul li {
+ width: 100%;
+ cursor: pointer;
+}
+
+.header__playlist ul li:hover{
+ border-right: 3px solid #3e37d1;
+}
+
+.header__playlist ul li:hover .header__playlist-navLink {
+ color: #3e37d1;
+}
+
+.header__playlist ul li .header__playlist-navLink{
+ text-decoration: none;
+ font-size: small;
+ color: #60676e;
+ font-weight: 500;
+ display: flex;
+ align-items: center;
+}
+
+.header__playlist ul li .header__playlist-navLink div {
+ width: 1.5vw;
+}
+
+/* Style for smaller devices */
+@media screen and (max-width: 1600px) {
+ .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 1.8vw;
+ }
+}
+
+@media screen and (max-width: 1400px) {
+ .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 2vw;
+ }
+}
+
+@media screen and (max-width: 1200px) {
+ .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 2.7vw;
+ }
+}
+
+@media screen and (max-width: 1000px) {
+ .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 3.2vw;
+ }
+}
+
+@media screen and (max-width: 800px) {
+ .header {
+  width: 27vw;
+  position: absolute;
+  transform: translateX(-100%);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+ }
+
+ .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 5.3vw;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .header {
+  width: 37vw;
+ }
+
+ .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 6.5vw;
+ }
+}
+
+/* Style for telephones */
+@media screen and (max-width: 480px) {
+
+}
+
+
+/*Animation for menu*/
+.slide {
+ animation: slideFromLeft 0.8s 0s forwards;
+}
+
+.slide-reverse {
+ animation: slideToLeft 0.8s forwards;
+}
+
+@keyframes slideFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideToLeft {
+ 0% {
+   transform: translateX(0);
+ }
+ 100% {
+   transform: translateX(-100%);
+ }
+}
+
+
+
