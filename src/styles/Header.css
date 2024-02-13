@@ -191,6 +191,10 @@
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
   width: 3.2vw;
  }
+
+ .header {
+  padding: 3vh 0 3vh 2vw;
+ }
 }
 
 @media screen and (max-width: 800px) {
@@ -200,6 +204,7 @@
   transform: translateX(-100%);
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  padding: 3vh 0 3vh 3vw;
  }
 
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
@@ -209,7 +214,7 @@
 
 @media screen and (max-width: 600px) {
  .header {
-  width: 37vw;
+  width: 30vw;
  }
 
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
