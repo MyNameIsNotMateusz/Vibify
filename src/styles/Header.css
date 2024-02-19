@@ -74,9 +74,27 @@
  align-items: center;
 }
 
+.menuNavActive {
+  text-decoration: none;
+  font-size: small;
+  color: #3e37d1;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.menuLiActive {
+  border-right: 3px solid #3e37d1;
+}
+
 .header__menu ul li .header__menu-navLink div {
  width: 1.5vw;
 }
+
+.header__menu ul li .menuNavActive div {
+  width: 1.5vw;
+}
+ 
 
 /* Styles for header__library and his children */
 .header__library {

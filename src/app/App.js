@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { AppLayout } from "./AppLayout"
+import { Discover } from "../components/Discover";
 
 export const App = () => {
 
@@ -7,7 +8,7 @@ export const App = () => {
   <BrowserRouter>
    <Routes>
     <Route path="/" element={<AppLayout />}>
-   
+      <Route path="discover" element={<Discover />} />
     </Route>
    </Routes>
   </BrowserRouter>
