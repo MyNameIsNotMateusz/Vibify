@@ -191,10 +191,18 @@
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
   width: 1.8vw;
  }
+
+ .header__menu ul li .menuNavActive div {
+  width: 1.8vw;
+ }
 }
 
 @media screen and (max-width: 1400px) {
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 2vw;
+ }
+
+ .header__menu ul li .menuNavActive div {
   width: 2vw;
  }
 }
@@ -203,10 +211,18 @@
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
   width: 2.7vw;
  }
+
+ .header__menu ul li .menuNavActive div {
+  width: 2.7vw;
+ }
 }
 
 @media screen and (max-width: 1000px) {
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 3.2vw;
+ }
+
+ .header__menu ul li .menuNavActive div {
   width: 3.2vw;
  }
 
@@ -228,6 +244,10 @@
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
   width: 5.3vw;
  }
+
+ .header__menu ul li .menuNavActive div {
+  width: 5.3vw;
+ }
 }
 
 @media screen and (max-width: 600px) {
@@ -236,6 +256,10 @@
  }
 
  .header__brand div, .header__menu ul li .header__menu-navLink div, .header__library ul li .header__library-navLink div, .header__playlist ul li .header__playlist-navLink div {
+  width: 6.5vw;
+ }
+
+ .header__menu ul li .menuNavActive div {
   width: 6.5vw;
  }
 }
